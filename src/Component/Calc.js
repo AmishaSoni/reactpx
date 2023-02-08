@@ -1,30 +1,15 @@
 import React from 'react'
 
-const Calc = (props) => {
+const Calc = ({num1,num2,type}) => {
 
 
+    var a = 0;
     
+
   return (
       
     <div>
-        <div>Num1={props.num1} , Num2={props.num2} </div>
-        <div>{props.type}===add</div>
-        
-        type==="add"
-        <div>
-            {props.num1+props.num2}
-        </div>
-        
-        
-        if(props.type=="sub")
-        {<div>substraction={props.num1-props.num2}</div>}
-
-        if(props.type=="div")
-        {<div>division={props.num1/props.num2}</div>}
-
-        if(props.type=="multi")
-        {<div>mltiplication={props.num1*props.num2}</div>}
-
+        <div>{type == "add" ? num1+num2 : type == "sub" ? num1-num2 : type=="div" ? num1/num2 : num1*num2 }</div>
     </div>
   )
 }
