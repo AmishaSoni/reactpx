@@ -12,8 +12,8 @@ function App() {
       <Calc num1={2} num2={4} type="div"/>
       <Calc num1={2} num2={4} type="multi"/>  */}
       {/* <Add />  */}
-       <Calculator/>
-       {/* <Singlecalc /> */}
+       {/* <Calculator/> */}
+       <Singlecalc />
     </div>
   );
 }
