@@ -4,6 +4,8 @@ import Calc from './Component/Calc';
 import Add from './Component/Add';
 import Calculator from './Component/Calculator';
 import Singlecalc from './Component/Singlecalc';
+import { Todolist } from './Component/Todolist';
+import { Project1 } from './Component/Project1';
 function App() {
   return (
     <div className="App">
@@ -13,7 +15,9 @@ function App() {
       <Calc num1={2} num2={4} type="multi"/>  */}
       {/* <Add />  */}
        {/* <Calculator/> */}
-       <Singlecalc />
+       {/* <Singlecalc /> */}
+       {/* <Todolist/> */}
+       <Project1/>
     </div>
   );
 }

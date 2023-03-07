@@ -1,0 +1,128 @@
+#head1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+    font-weight: 1000;
+
+}
+
+
+#listdiv1
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border:1px solid rgba(221, 218, 218, 0.347);
+    height:200px;
+    border-radius: 10px;
+    background-color: rgba(225, 224, 224, 0.774);
+}
+#listdiv2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:40px;
+    flex-direction: column;
+}
+#listdiv3
+{
+    display: block;
+    border: 1px solid rgba(175, 173, 173, 0.347);
+    width:1300px;
+    height:50px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: medium;
+}
+#listdiv4
+{
+    display: inline-block;
+    background-color:rgb(6, 104, 169);
+    text-align: center;
+    color: white;
+    font-size: medium;
+    width:100%;
+    height:30px;
+    width:1300px;
+    height:50px;
+    border-radius: 8px;
+
+}
+#taskdiv1
+{
+    margin-top: 50px;
+    margin:30px;
+}
+#taskdiv2
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(87, 83, 83);
+    font-weight: 1000;
+    text-align: left;
+    margin-left: 40px;
+}
+#btn1,#btn2
+{
+    float:right;
+    display: inline-block;
+    background-color:rgb(6, 104, 169);
+    text-align: center;
+    color: white;
+    font-size: medium;
+    width:100px;
+    height:40px;
+    border-radius: 8px;
+    margin: 5px;
+}
+#taskdiv3
+{
+    margin:30px;
+    height:auto;
+}
+
+#taskdiv4
+{
+    border:1px solid green;
+    background-color: rgb(148, 244, 148);
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    text-align: left;
+    padding:20px;
+    height: 50px;
+}
+#taskdiv4:hover
+{
+    background-color:rgb(60, 142, 197);
+    color:rgb(6, 54, 91);
+   
+}
+#time
+{
+    display: block;
+}
+#taskdiv5
+{
+    float: right;
+
+}
+#button1
+{
+    font-size: 18px;
+    background-color:rgb(102, 248, 85) ;
+}
+#button2
+{
+    font-size: 18px;
+    background-color: rgb(253, 46, 46);
+   
+}
+#input_check
+{
+    width:20px;
+    height:20px;
+    
+}

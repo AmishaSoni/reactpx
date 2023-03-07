@@ -1,0 +1,70 @@
+#flex-outer
+{
+    display:flex;
+    border:2px solid black;
+    border-radius: 20;
+    height:700px ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#flex-item-outer2
+{
+    border:5px solid rgb(58, 248, 248);
+    height:500px;
+    background-color: azure;
+    color: rgb(11, 125, 145);
+    border-radius: 10%;
+    width:300px;
+    font-size:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#flex-item-outer1
+{
+    border:5px solid rgb(58, 248, 248);
+    height:500px;
+    background-color: azure;
+    color: rgb(11, 125, 145);
+  
+    width:300px;
+}
+.flex-item-inner1
+{
+    border:5px solid rgb(58, 248, 248);
+  width:290px;
+  background-color: aqua;
+  height:100px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#flex-item-inner3 ,#flex-item-inner4,#flex-item-inner5,#flex-item-inner6,#flex-item-inner7
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+#flex-item-inner3 > div,#flex-item-inner4 > div,#flex-item-inner5 > div,#flex-item-inner6 > div,#flex-item-inner7 > div {
+    background-color: #0ca2f3;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.flex-item1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+}
