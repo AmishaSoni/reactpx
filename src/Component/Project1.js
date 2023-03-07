@@ -5,31 +5,30 @@ import moment from "moment";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 
 export const Project1 = () => {
-  const [list, setlist] = useState([]);
-  const [btn, setbtn] = useState("Add");
-  const [indx, setindx] = useState();
-  const [alllist, setalllist] = useState([]);
-  const [donelist, setdonelist] = useState([]);
-  const [list1, setlist1] = useState([]);
+  const [list, setList] = useState([]);
+  const [btn, setBtn] = useState("Add");
+  const [indx, setIndx] = useState();
+  const [doneList, setDoneList] = useState([]);
+  const [list1, setList1] = useState([]);
 
 
   function addition() {
     var val_list = document.getElementById("listdiv3");
-    setlist([...list, val_list.value]);
-    setlist1([...list, val_list.value]);
+    setList([...list, val_list.value]);
+    setList1([...list, val_list.value]);
     val_list.value = null;
   }
   function deletion(value, index) {
     var llist = list?.filter((val, idx) => idx != index);
-    setlist(llist);
-    setlist1(llist);
+    setList(llist);
+    setList1(llist);
   }
   function modification(value, index) {
     var curr_val = list[index];
     var current_inp_val = document.getElementById("listdiv3");
     current_inp_val.value = curr_val;
-    setbtn("Save");
-    setindx(index);
+    setBtn("Save");
+    setIndx(index);
   }
   function modifying() {
     var llist = [];
@@ -38,30 +37,26 @@ export const Project1 = () => {
     }
     var new_input_val = document.getElementById("listdiv3");
     llist[indx] = new_input_val.value;
-    setlist(llist);
-    setlist1(llist);
-    setbtn("Add");
+    setList(llist);
+    setList1(llist);
+    setBtn("Add");
     var next_val = document.getElementById("listdiv3");
     next_val.value = null;
   }
-  function Showlist(val, index) 
-  {
-    var newdonelist=[];
-    for(var i=0;i<donelist.length;i++)
-    {
-        newdonelist.push(donelist[i]);
+  function showList(val, index) {
+    var newDoneList = [];
+    for (var i = 0; i < doneList.length; i++) {
+      newDoneList.push(doneList[i]);
     }
-    newdonelist.push(list[index]);
-    setdonelist(newdonelist);
-    console.log(donelist);
+    newDoneList.push(list[index]);
+    setDoneList(newDoneList);
+    console.log(doneList);
   }
-  function Showdonelist(e)
-  {
-     setlist(donelist);
+  function showDoneList(e) {
+    setList(doneList);
   }
-  function Showalllist(e)
-  {
-    setlist(list1);
+  function showAllList(e) {
+    setList(list1);
   }
 
   return (
@@ -83,8 +78,8 @@ export const Project1 = () => {
         <div id="taskdiv2">
           <h1>
             Tasks
-            <button id="btn1" onClick={(e)=>Showalllist(e)}>All</button>
-            <button id="btn2" onClick={(e)=>Showdonelist(e)}>Done</button>
+            <button id="btn1" onClick={(e) => showAllList(e)}>All</button>
+            <button id="btn2" onClick={(e) => showDoneList(e)}>Done</button>
           </h1>
         </div>
         <hr></hr>
@@ -94,7 +89,7 @@ export const Project1 = () => {
               <input
                 id="input_check"
                 type="checkbox"
-                onClick={(e) => Showlist(e, index)}
+                onClick={(e) => showList(e, index)}
               />
               {items}
               <div id="taskdiv5">
@@ -106,8 +101,6 @@ export const Project1 = () => {
                 </button>
               </div>
               <div id="time">{moment().format("MMMM Do YYYY, h:mm:ss a")}</div>
-
-              
             </div>
           ))}
         </div>
